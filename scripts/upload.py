@@ -28,7 +28,8 @@ def insert_data(data):
             'date': datetime.datetime.strptime(item['date'], "%d-%m-%Y"),
             'text': item['review'],
             'sentiment': sentiment(item['review']),
-            'labels': item['labels']
+            'labels': item['labels'],
+            'business': item['business']
         }
         reviews.insert_one(review)
 

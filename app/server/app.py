@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from server.routes.business import router as BusinessRouter
+from server.routes.review import router as ReviewRouter
 
 app = FastAPI()
-app.include_router(BusinessRouter, tags=["Business"], prefix="/business")
+app.include_router(ReviewRouter, tags=["Review"], prefix="/reviews")
 
 @app.get("/", tags=["Root"])
 async def read_root():
