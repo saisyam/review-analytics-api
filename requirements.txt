@@ -2,11 +2,13 @@ asgiref==3.3.4
 certifi==2021.5.30
 charset-normalizer==2.0.3
 click==8.0.1
+et-xmlfile==1.1.0
 fastapi==0.65.1
 h11==0.12.0
 httptools==0.2.0
 idna==3.2
 motor==2.4.0
+openpyxl==3.0.7
 pydantic==1.8.2
 pymongo==3.11.4
 python-dotenv==0.17.1
