@@ -1,5 +1,5 @@
 # Review Analytics
-Building an application to analyze reviews using FastAPI, MongoDB and ReactJS.
+Building an application to analyze reviews using FastAPI, PostgreSQL and ReactJS.
 
 ## Run the application
 
@@ -7,9 +7,9 @@ Building an application to analyze reviews using FastAPI, MongoDB and ReactJS.
 $ python3 app/main.py
 ```
 
-## Run Mongodb as docker
-I am using `mongodb` docker for this application. You can run the docker using the following command:
+## Run PostgreSQL as docker
+I am using `postgreSQL` docker for this application. You can run the docker using the following command:
 ```shell
-$ docker run -d -it -p 27017:27017 mongo:latest
+$ docker run -e POSTGRES_PASSWORD=<Postgres password> -d postgres
 ```
-The above command will download and run the `mongodb` docker image.
+The above command will download and run the `postgres:latest` docker image.
